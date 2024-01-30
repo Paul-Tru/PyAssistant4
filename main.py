@@ -1,5 +1,5 @@
 import logging
-from method import search_devices, stt
+from methods import search_devices, stt
 from administer_files import convert_m4a_to_mp3, manage_ini, read_env
 
 

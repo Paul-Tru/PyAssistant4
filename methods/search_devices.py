@@ -1,7 +1,7 @@
 import os
 import logging
 from administer_files import read_env
-from method import check_os
+from methods import check_os
 
 
 def search_devices():
