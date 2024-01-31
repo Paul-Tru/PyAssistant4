@@ -7,9 +7,9 @@ file_path = "files/config.ini"
 def read_ini(sec, var):
     config = configparser.ConfigParser()
     config.read(file_path)
-    logging.debug("load ini file")
+    logging.debug("load file")
     ini = config.get(sec, var)
-    logging.info(f"get '{var}' variable from section '{sec}' ({ini})")
+    logging.info(f"get '{var}' from '{sec}' ({ini})")
     return ini
 
 
@@ -25,4 +25,4 @@ def write_ini(sec, var, content):
 
     with open(file_path, 'w') as config_file:
         config.write(config_file)
-        logging.debug(f"write '{content}' into '{var}' from section '{sec}'")
+        logging.debug(f"write '{content}' into '{var}' '{sec}'")

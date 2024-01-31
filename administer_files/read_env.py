@@ -9,9 +9,9 @@ def read_env(variable):
 
     # Load env
     load_dotenv(dotenv_path=env_path)
-    logging.debug("load env file")
+    logging.debug("load file")
 
     # Get Variable
     env = os.getenv(variable)
-    logging.info(f"get '{variable}' variable from env file ({env})")
+    logging.info(f"get '{variable}' from '{env}'")
     return env
